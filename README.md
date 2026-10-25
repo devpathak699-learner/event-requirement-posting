@@ -84,7 +84,7 @@ MongoDB `requirements` collection, document tagged with `category`
 
 ### Why one collection with Mongoose discriminators?
 - Every requirement shares the same "Step 1" fields, and only `details` differs. Discriminators keep **one `requirements` collection** where each document is tagged `category: planner | performer | crew` and **validated against its own sub-schema**.
-- Listing across all categories, or within one, is a single indexed query (`{ category: 1, createdAt: -1 }`), with no joins or `$unionWith`.
+- Listing across all categories, or within one, is a single indexed query (`{ category: 1, createdAt: -1 }`) with no joins or `$unionWith`.
 - Adding a fourth category means adding one discriminator and one Zod branch.
 - The alternative (three separate collections) makes "show me everything" and shared stats awkward, and a single loosely typed collection loses validation per category.
 
