@@ -4,8 +4,8 @@ A multi-step flow for posting an event requirement and hiring an **Event Planner
 
 | | |
 |---|---|
-| **Live app** | `https://<your-app>.vercel.app` |
-| **API** | `https://<your-api>.onrender.com/api/health` |
+| **Live app** | `https://event-requirement-posting.vercel.app` |
+| **API** | `https://event-requirements-api.onrender.com/api/health` |
 | **Stack** | Next.js 16 (App Router, TypeScript, Tailwind CSS 4) · Node.js + Express 5 · MongoDB + Mongoose 9 · Zod 4 |
 
 ---
